@@ -49,7 +49,3 @@ This class fetches METAR data from the aviationweather.gov API, parses the XML r
 ## Authors
 
 Orkun Kocatürk - https://github.com/Orkkoc
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
