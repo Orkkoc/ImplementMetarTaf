@@ -4,20 +4,20 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using YourProject.Domain.Entities.TAF;
-using CommonServices.Services.Abstractions;
+using YourNameSpace.Domain.Entities.TAF;
+using YourNameSpace.Services.Abstractions;
 using Microsoft.Extensions.Localization;
-using YourProject.Domain.Models;
+using YourNameSpace.Domain.Models;
 using System.Threading;
 
-namespace CommonServices.API.Hangfire
+namespace YourNameSpace.API.Hangfire
 {
     public class TafJobs
     {
-        private readonly ICommonServices _service;
+        private readonly IServices _service;
 
         public TafJobs(
-            ICommonServices service,
+            IServices service,
             IStringLocalizer<SharedResources> SharedResourcesLocalizer)
         {
             _service = service;
